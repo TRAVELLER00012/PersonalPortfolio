@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body  id="starting-page-greeting">
+    <div class="navigation">
+        <div class="navigation-bar">
+            <h1 class="navigation-heading">Portfolio.</h1>
+            <ul class="navigation-bar-list">
+                <li><a href="#starting-page-greeting" class="navigation-item">Home</a></li>
+                <li><a href="#about-me-text" class="navigation-item">About</a></li>
+                <li><a href="#projects" class="navigation-item">Portfolio</a></li>
+                <li><a href="#contact" class="navigation-item extra-margin">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="starting-page">
+        <div  data-aos="fade-right" class="introduction">
+            <h2 class="line-1"><span class="highlight">Hi</span>, It's Me</h2>
+            <h1 class="page-heading"><span class="highlight">Daksh</span> Kumar</h1>
+            <p class="type">And I'm a <span class="highlight skill">Programmar</span></p>
+            <!-- <span class="type hidden-msg "> Tho wouldn't really call myself as one</span> -->
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure maiores quas eius velit non, exercitationem voluptas magni laboriosam error necessitatibus.</p>
+            <div class="social-media">
+                <a href="#"><img class="icon dark-border" src="images/discord_blue.svg" alt="discord-logo"></a>
+                <a href="#"><img class="icon" src="images/instagram-logo_blue.svg" alt="instagram-logo"></a>
+                <a href="#"><img class="icon dark-border" src="images/github-logo_blue.svg" alt="github-logo"></a>
+            </div>
+        </div>
+        <div data-aos="fade-up"><img class="pfp up-down-animation" src="images/pfp.png" alt="pfp"></div>
+    </div>
+    
+    <div class="about-me-page margin-up">
+        <div data-aos="fade-right"><img class="pfp about-me-pfp" src="images/pfp.png" alt="pfp"></div>
+        <div class="about-me">
+            <h1 class="page-heading" data-aos="fade-down-left" id="about-me-text">About <span class="highlight">Me</span></h1>
+            <p class="type" data-aos="fade-left"><span class="highlight">Programmar!</span></p>
+            <p class="about-me-description" data-aos="fade-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga repellat ipsam odit voluptates molestias laudantium, eaque totam necessitatibus placeat recusandae dicta velit deleniti inventore suscipit! Eligendi, iste! Debitis consequuntur accusantium perferendis voluptates iusto dolorum expedita dolor accusamus provident! Odit magni ab autem ipsam ullam doloremque sequi perspiciatis nemo quam ex.</p>
+            <div data-aos="fade-left"><button class="read-more">Read More</button></div>
+        </div>
+    </div>
+
+    <div class="projects">
+        <div id="projects"></div>
+        <div>
+            <h1 id="project-heading" class="page-heading" data-aos="fade-bottom">Latest<span class="highlight"> Projects</span></h1> 
+        </div>
+        <div class="grid-1x2">
+            <div class="project" data-aos="fade-right">
+                <img class="project-image blue-shadow" src="images/project-1.png" alt="project one contact form">
+                <a href="#"><img  class="open-project" src="images/open.svg" alt=""></a>
+            </div>
+            <div class="project" data-aos="fade-left">
+                <img class="project-image red-shadow" src="images/project-2.png" alt="project two login page">
+                <a href="#"><img  class="open-project" src="images/open.svg" alt=""></a>
+            </div>
+        </div>
+    </div>     
+    <div id="contact" class="contact-me">
+        <div data-aos="fade-bottom">
+            <h1 class="page-heading" >Contact<span class="highlight"> Me!</span></h1> 
+        </div>
+        <div class="contact-form">
+            <form>
+                <div class="grid-3x2">
+                    <div data-aos="fade-down-right"><input type="text" class="contact-input full-name" placeholder="Full Name"></div>
+                    <div data-aos="fade-down-left"><input type="email" class="contact-input email" placeholder="Email"></div>
+                    <div data-aos="fade-up-right"><input type="number" class="contact-input phone-number" placeholder="Phone Number"></div>
+                    <div data-aos="fade-up-left"><input type="text" class="contact-input subject" placeholder="Subject"></div>
+                    <div  data-aos="zoom-in"><textarea class="contact-input contact-text-area" cols="30" rows="10" placeholder="Your Message"></textarea></div>
+                </div>
+                <div class="form">
+                </div>
+                <div><button type="submit" class="send">Send Message</button></div>
+            </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
